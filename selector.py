@@ -1,9 +1,9 @@
 import random
 
-def get_lucky_nums():
+def getLotto():
     return random.sample(range(1,45+1), k=6)
 
 if __name__ == '__main__':
-    times = int(input('Enter num(1-100): '))
-    for i in range(times):
-        print(get_lucky_nums())
+    itv_times = int(input('Enter interval number: '))
+    for i in range(itv_times):
+        print(getLotto())
